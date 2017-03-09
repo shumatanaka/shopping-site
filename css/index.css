@@ -344,6 +344,7 @@ text-align: left;
  .about{
   flex-direction: column;
  }
+ 
  .below{
   flex-direction: column;
   height:200px;
