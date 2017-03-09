@@ -14,3 +14,8 @@ $(window).load(function(){
   });
 });
 */
+$(document).ready(function(){
+  $(".unedercategories1").click(function(){
+    $(".cate1").slideToggle();
+  });
+});

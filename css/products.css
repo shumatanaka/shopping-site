@@ -35,6 +35,10 @@ html{
  float:left;
 }
 
+.nine.columns.home{
+ margin-bottom: 5%;
+}
+
 .goodtitles{
   display: flex;
  justify-content: space-between;
@@ -58,6 +62,19 @@ html{
  height:450px;
  border: 0.5px solid #F5F5DC;
  background-color:#ffffff;
+}
+
+
+.goodbox{
+ border: 0.5px solid #F5F5DC ;
+ text-align: center;
+}
+
+
+.goodbox1{
+ text-align:center;
+ background-color:#f9f9f5;
+ border: 0.5px solid #F5F5DC ;
 }
 
 .slidetop{
@@ -94,7 +111,6 @@ html{
   margin-bottom: 5%;
   padding:0% 8%;
   border-top: 0.5px solid #F5F5DC ;
-  border-bottom: 0.5px solid #F5F5DC ;
   background-color:#ffffff;
 }
 
@@ -105,10 +121,6 @@ html{
 .goodinfo table{
  width:100%;
  height:80px;
- 
-}
-
-.goodbox{
  border: 0.5px solid #F5F5DC ;
 }
 
@@ -136,23 +148,29 @@ html{
 width:100%;
 height:50%;
 border-bottom:0.5px solid #F5F5DC;
+
 }
 
 .price1{
+ padding-top: 3%;
  float:left;
  width:50%;
  height:100%;
+ vertical-align: middle;
 }
 
 .amounttag{
  width:100%;
  height:50%;
+ vertical-align: middle;
 }
 
 .amount1{
+ padding-top: 3%;
  float:left;
  width:25%;
  height:100%;
+ vertical-align: middle;
 }
 
 .textBox{
@@ -165,25 +183,41 @@ border-bottom:0.5px solid #F5F5DC;
     clear: both;
 }
 
-.explanation{
+.explanation1{
+ padding:3%;
  width:100%;
  margin-top:37px;
  margin-left:0px;
  background-color:#ffffff;
- border-bottom: 0.5px solid #F5F5DC ;
+}
+
+.explanation1 h1{
+ font-size: 20px;
+ margin:5% 0%;
+}
+
+
+.explanation1 p{
+ margin:3%;
 }
 
 .titleexplanation{
- border-top: 0.5px solid #F5F5DC ;
+ border-top: 0.5px solid #000000 ;
+}
+
+.titleexplanation strong{
+ display : block;
+ margin-top: 3%;
 }
 
 .explanationbox{
  border: 0.5px solid #F5F5DC ;
 }
 
-.explanation table{
+
+.biggerbox{
  width:100%;
- margin-bottom: 90px;
+ margin-bottom: 10%;
  border: 0.5px solid #F5F5DC ;
 }
 
@@ -281,13 +315,15 @@ justify-content: space-between;
 
 .undercategories1{
  color:#ffffff;
- width:191.55px;
- height:13.76px;
+ width:auto;
+ height:auto;
  margin: 0 auto;
  padding: 15px 12px 13px 15px;
+ text-align: center;
  display: flex;
  justify-content: space-between;
  text-transform: uppercase;
+ cursor: pointer; 
 }
 
 .cate1{
@@ -301,12 +337,13 @@ justify-content: space-between;
   border: 0.5px solid #f9f9f9;
   text-align: center;
   background-size:auto;
+  border: 0.5px solid #f9f9f9;
 }
 
 .undercategories2{
  background-color: #ffffff;
- width:191.55p;
- height:13.76px;
+ width:auto;
+ height:auto;
  margin:19px 12px 13px 15px;
  display: flex;
  justify-content: space-between;
@@ -330,6 +367,7 @@ border: 1px solid #000000; /* ボーダー */
 }
 
 .deliverly{
+ color: #887f69;
  background-color: #ffffff;
  float:left;
  margin: 1.0%;
@@ -338,10 +376,13 @@ border: 1px solid #000000; /* ボーダー */
  height: 264px;
 }
 
-
 .deliverly ul {
  text-align: left;
  list-style: none;
+}
+
+.deliverlyin{
+ color: #000000;
 }
 
 .privacy {
@@ -351,14 +392,14 @@ border: 1px solid #000000; /* ボーダー */
 }
 
 .about{
- margin:10px 0px;
+ margin-top:5%;
  padding: 19px 12px 13px 15px;
  background-color: #887f69;
 }
 
 .below{
  background-color: #ffffff;
- height:265px;
+ height: 265px;
  text-align: center;
  padding: 4px 4px 10px 4px;
 }
@@ -367,11 +408,12 @@ border: 1px solid #000000; /* ボーダー */
 list-style: none;
 }
 
-.below ul li h6{
+.below ul li{
 text-align: left;
 }
 
 .shop{
+ margin-top:5%;
  padding: 19px 12px 13px 15px;
  background-color: #887f69;
 }
@@ -387,8 +429,17 @@ text-align: left;
 list-style: none;
 }
 
-.info ul li h7{
+.info ul li {
 text-align: left;
+}
+
+.more{
+ float: right;
+ }
+ 
+.picture{
+ float: left;
+ width: 45%;
 }
 
 .pagetop{
@@ -474,23 +525,6 @@ text-align: left;
  .about{
   flex-direction: column;
  }
- .below{
-  flex-direction: column;
- }
- 
- .shop{
-  flex-direction: column;
- }
- 
- .info{
-  margin-bottom:47px;
-  flex-direction: column;
- }
- 
- .explanation{
- width: 100%;
- flex-direction: column;
- }
  
  .priceinfo{
   width:100%;
@@ -509,9 +543,36 @@ text-align: left;
  display:none;
 }
 
+.below{
+  flex-direction: column;
+  height:200px;
+  padding-right: 20px;
+ }
+ 
+ .below ul{
+ margin-right: 20px;
+ }
+ 
+ .shop{
+  flex-direction: column;
+ }
+ 
+ .info{
+  margin-bottom:47px;
+  flex-direction: column;
+  height:200px;
+  padding-right: 20px;
+ }
+ 
+ .explanation{
+ float: right;
+ width: 45%;
+ flex-direction: column;
+ }
  
 .more{
- float: right;
+ float: left;
+ margin-left: 9%;
  }
  
 .picture{

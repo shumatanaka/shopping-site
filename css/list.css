@@ -34,6 +34,10 @@ html{
  margin-left:5px;
  float:left;
 }
+
+.nine.columns.home{
+ margin-bottom: 5%;
+}
     
 .sp_navi{
    background-color: #e8e4da;
@@ -68,8 +72,8 @@ html{
 
 .bottom2{
  background-color: #887f69;
- margin:10% 0%;
- padding:1% 0%;
+ margin:5% 0%;
+ padding-top:3%;
  width: 40%;
  height:40px;
  text-align: center;
@@ -191,6 +195,7 @@ border: 1px solid #000000; /* ボーダー */
 }
 
 .deliverly{
+ color: #887f69;
  background-color: #ffffff;
  float:left;
  margin: 1.0%;
@@ -199,10 +204,13 @@ border: 1px solid #000000; /* ボーダー */
  height: 264px;
 }
 
-
 .deliverly ul {
  text-align: left;
  list-style: none;
+}
+
+.deliverlyin{
+ color: #000000;
 }
 
 .privacy {
@@ -212,14 +220,14 @@ border: 1px solid #000000; /* ボーダー */
 }
 
 .about{
- margin:10px 0px;
+ margin-top:5%;
  padding: 19px 12px 13px 15px;
  background-color: #887f69;
 }
 
-.below{
+ .below{
  background-color: #ffffff;
- height:265px;
+ height: 265px;
  text-align: center;
  padding: 4px 4px 10px 4px;
 }
@@ -228,11 +236,12 @@ border: 1px solid #000000; /* ボーダー */
 list-style: none;
 }
 
-.below ul li h6{
+.below ul li{
 text-align: left;
 }
 
 .shop{
+ margin-top:5%;
  padding: 19px 12px 13px 15px;
  background-color: #887f69;
 }
@@ -248,8 +257,17 @@ text-align: left;
 list-style: none;
 }
 
-.info ul li h7{
+.info ul li {
 text-align: left;
+}
+
+.more{
+ float: right;
+ }
+ 
+.picture{
+ float: left;
+ width: 45%;
 }
 
 .pagetop{
@@ -323,8 +341,11 @@ text-align: left;
  .about{
   flex-direction: column;
  }
- .below{
+
+.below{
   flex-direction: column;
+  height:200px;
+  padding-right: 20px;
  }
  
  .shop{
@@ -334,6 +355,8 @@ text-align: left;
  .info{
   margin-bottom:47px;
   flex-direction: column;
+  height:200px;
+  padding-right: 20px;
  }
  
  .explanation{
@@ -343,7 +366,8 @@ text-align: left;
  }
  
 .more{
- float: right;
+ float: left;
+ margin-left: 9%;
  }
  
 .picture{
